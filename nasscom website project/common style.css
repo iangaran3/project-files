@@ -1,0 +1,105 @@
+body{
+    background-color:white;
+}
+    #main{
+        
+        background-color: black;
+        padding: 13px;
+       
+        white-space: nowrap;
+    }
+   .links{
+      
+       display: inline;
+       padding: 13px;
+      
+          
+       margin: 0 10px;
+   }
+
+  #products {
+      text-decoration: none;
+      color:  white;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    font-size: medium;
+  }
+
+ .active,.links:hover{
+    background-color:navy;
+    color: white;
+}
+.links:hover{
+    background-color: chocolate;
+    color: white;
+}
+
+ #moto{
+     font-style: italic;
+     text-align: left;
+      padding-left: 50%;
+     font-weight: bold;
+     font-size:20px;
+     text-transform: capitalize;
+     position: relative;
+     bottom: 20px;
+    
+ }
+
+ #header{
+    color: brown; 
+     
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-size: 200%;
+
+ }
+ #memes{
+     text-transform: capitalize;
+}
+#heads{
+    vertical-align:120%;
+    text-decoration:underline;
+    text-shadow: 0 0 3px green;
+}
+#for{
+    text-align: center;
+}
+#apj{
+    padding-left: 80px;
+        font-style: italic;
+        text-align: left;
+     
+        font-weight: bold;
+        font-size:20px;
+        text-transform: capitalize;
+        position: relative;
+        top: 20px;
+
+}
+#legendtag{
+    background-color: gold;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#concrete1{
+    visibility: hidden;
+}
+
+#locationss{
+    margin-left: 63%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+#header1333{
+    white-space:nowrap;
+}
+#main{
+    white-space: nowrap;
+}
+#nowrap{
+    white-space: nowrap;
+}

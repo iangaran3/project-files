@@ -1,0 +1,47 @@
+<html>
+     <head>
+        <title> estimation labour </title>
+        st
+    </head>
+    <body>
+        <h1><b><a href="C:\Users\INFINITY INFORMATION\Documents\ESTIMATION WEBSITES\HOME PAGE.html">CONSTRUCTION ESTIMATION</a></b></h1>
+<p><i>calculated according to what you think the job</i></p>
+<p><b> <h3>measurement of</h3> </b></p>
+<div id="measurement">
+    <table border="3" cellpadding="10">
+    <tr>
+        <td><a href="#">sand</a></td>
+        <td><a href="#">concrete</a></td>
+        <td><a href="C:\Users\INFINITY INFORMATION\Documents\ESTIMATION WEBSITES\cement.html">cement</a></td>
+        <td><a href="C:\Users\INFINITY INFORMATION\Documents\ESTIMATION WEBSITES\cement for plaster.html">cement for plaster</a></td>
+        <td><a href="C:\Users\INFINITY INFORMATION\Documents\ESTIMATION WEBSITES\tiles.html">tiles</a></td>
+        <td><a href="C:\Users\INFINITY INFORMATION\Documents\ESTIMATION WEBSITES\brick page.html">bricks</a></td>
+        <td><a href="C:\Users\INFINITY INFORMATION\Documents\ESTIMATION WEBSITES\paints.html">paints</a></td>
+        <td><a href="C:\Users\INFINITY INFORMATION\Documents\ESTIMATION WEBSITES\labour.html"> reuired labour</a></td>
+     </tr>
+    </table>
+</div> <br>
+<div id="paint calculator">
+    <fieldset>
+     <legend><b>LABOUR CALCULATOR</b></legend>
+    <h3>REUIRED FOR LABOUR</h3>
+    <label>length of the wall(L): <input type="number" name="length of the wall" required> feet</label><br> <br>
+    <label>width of the wall(H):<input type="number" name="width of the wall" required> feet</label><br> <br>
+    <label for=""> no of sides : <input type="number" name="number of sides" id="sidesof wall"> nos</label>
+    <input type="submit" value="sent" name="values-sent">
+     </fieldset>
+</div>
+ <br> <div id="result of walls">
+     <h4>REQUIRED AMOUNT OF walls</h4>
+   <label for=""><b>Dry wall</b> (new wall) result:</label> <br><br>
+   <li>total paint area activity = <input type="number" name="paint" id="paint" size="3" max="3"> sq feet</li> <br> <br>
+   <li>total required paint litters = <input type="number" name="paint litter" id="paint litter"> litters</li> <br> <br>
+   <li>total paints cost = <input type="number" name="paint cost" id="paint cost"> rupees</li> <br> <br>
+
+   <label for=""><b>Wet wall</b> (old wall) result</label> <br> <br>
+   <li>total paint area activity = <input type="number" name="paint" id="paint" size="3" max="3"> sq feet</li> <br> <br>
+   <li>total required paint litters = <input type="number" name="paint litter" id="paint litter"> litters</li> <br> <br>
+   <li>total paints cost = <input type="number" name="paint cost" id="paint cost"> rupees</li> <br> <br>
+</div>
+</body>
+</html>

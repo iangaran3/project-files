@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>estimation of tiles</title>
+        <link rel="stylesheet" href="common style.css">
+        <style>
+            .fieldset{
+            
+            width:40%;
+           border: 3px solid black;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            font-style: normal;
+          line-height: 20px;
+          float: left;
+          margin : 0 3.5% ;
+          background: url("tiles1.jpg") no-repeat center;
+        }
+        #default{
+            text-align: center;
+            text-transform: capitalize; 
+            font-weight: bolder;
+        margin-top: 10px;
+            text-decoration:  underline;
+            font-size: 17px;
+        }
+        .buttons{
+border: none;
+background-color: gold;
+color: black;
+border-radius: 30px;
+padding: 10px 30px;
+font-weight: bolder;
+font-size: large;
+}
+.buttons:hover{
+    background-color: darkblue;
+    color: white;
+}
+        
+#nowrap{
+    white-space: nowrap;
+}
+        </style>
+        <script>
+            function add(){
+            var a,b,c,d,e,f,g,h;
+            a=parseInt(document.getElementById("length").value);
+            b=parseInt(document.getElementById("width").value);
+            c=parseFloat(document.getElementById("length1").value);
+            d=parseInt(document.getElementById("width1").value);
+            g=parseInt(document.getElementById("price").value);
+               e=c*d;
+               document.getElementById("result1").value=e=Math.round(e);
+            document.getElementById("result1").style.fontWeight="bolder";
+            document.getElementById("result1").style.color="blue";
+            document.getElementById("result1").style.textAlign="center";
+            e=c*d;
+               document.getElementById("result2").value=e=Math.round(e);
+            document.getElementById("result2").style.fontWeight="bolder";
+            document.getElementById("result2").style.color="blue";
+            document.getElementById("result2").style.textAlign="center";
+
+           f=e/(a*b);
+           document.getElementById("no of tiles").value=f=Math.round(f);
+            document.getElementById("no of tiles").style.fontWeight="bolder";
+            document.getElementById("no of tiles").style.color="blue";
+            document.getElementById("no of tiles").style.textAlign="center";
+           h=e*g
+           document.getElementById("cost").value=e=Math.round(e);
+            document.getElementById("cost").style.fontWeight="bolder";
+            document.getElementById("cost").style.color="blue";
+            document.getElementById("cost").style.textAlign="center";
+        }
+        </script>
+    </head>
+    <body>
+        <div id="nowrap">
+        <p>  <img src="civil.jpg" alt="calculator" width="90px" height="90px" > <span id="heads"> 
+            <a  id="header">  CIVIL CONSTRUCTION CALCULATOR FOR ESTIMATION </a></span> <img src="logo.png" alt="dept of civil" width="100px" height="100px"  border="2" align="right"></p>
+        
+         <div> <p id="moto"><i>- calculated according to what you think the job</i></p></div>
+        <div><h3 id="memes">measurement of  </h3></div>
+        
+           
+                <ul id="main">
+                   <li class="links"><a href="sand.html" id="products">sand</a></li>
+                    <li class="links"  id="concrete1"><a href="#" id="products">concrete</a></li>
+                    <li class="links"><a href="brick page.html" id="products">bricks</a></li>
+                    <li class="links"><a href="cement.html" id="products">cement</a></li>
+                   <li  class="links"><a href="cement for plaster.html" id="products">cement for plaster</a></li>
+                    <li class="links active"><a href="tiles.html" id="products">tiles</a></li>
+                    <li class="links"><a href="paints.html" id="products">paints</a></li>
+                    <li class="links"><a href="labour.html" id="products"> reuired labour</a></li>
+                    <li class="links"><a href="index.html" id="products">total estimation</a></li>
+                </ul>
+           </div> <br>
+
+<div id="tiles calculator">
+    <fieldset class="fieldset">
+        <legend id="legendtag"><b>TILES CALCULATOR</b></legend>
+    <label for=""><b>Dimension of 1 tiles</b> </label> <br> <br>
+    <label for=""><em>length of tiles</em> <input type="number" name="length of tiles" id="length" > feet</label> <br><br>
+    <label for=""><em>width of tiles</em> <input type="number" name="width of tiles" id="width" > feet</label> <br><br>
+    <label><b>Dmension of floor,bedroom & bathroom:-</b></label><br> <br>
+    <label>length of the floor(L): <input type="number" name="length of the floor" id="length1" required> feet</label><br> <br>
+    <label>width of the floor(H):<input type="number" name="width of the floor" id="width1" required> feet</label><br> <br>
+    <label for=""> per 1 sq.ft price = <input type="text" name="price per" size="3" maxlength="3" id="price"> </label> <br><br>
+    <button onclick="add()" id="sent" class="buttons"> CALCULATE </button>
+     </fieldset>
+</div>
+ <br> <div id="result of tiles">
+     <fieldset  class="fieldset">
+         <legend id="legendtag">RESULT</legend>
+     <h4>REQUIRED AMOUNT OF TILES</h4>
+    <label for=""> total area = <input type="number" name="total area" id="result1" readonly> sq.feet</label> <br> <br>
+    <label for="no of tiles"> no.of.tiles = <input type="nuumber" name="no of tiles" id="no of tiles" readonly>sq.feet</label> <br> <br>
+    <label>total tiles cost in <input type="text" name="cost tiles"  size="4" maxlength="6" id="result2" readonly> sq.feet is <input type="text" name="cost" id="cost" size="4" maxlength="6" readonly> rupees</label> <br> <br>
+</fieldset>
+</div>
+</div>
+</body>
+</html> 

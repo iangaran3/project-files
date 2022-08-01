@@ -1,0 +1,177 @@
+<html>
+     <head>
+        <title> estimation labour </title>
+        <link rel="stylesheet" href="common style.css">
+        <style>
+            .fieldset{
+            
+            width:40%;
+           border: 3px solid black;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            font-style: normal;
+          line-height: 20px;
+          float: left;
+          margin : 0 3.5% ;
+          background: url("labour5.jfif") no-repeat center; 
+         
+        }
+        #default{
+            text-align: center;
+            text-transform: capitalize; 
+            font-weight: bolder;
+        margin-top: 10px;
+            text-decoration:  underline;
+            font-size: 17px;
+        }
+       
+        
+        #buttons{
+border: none;
+background-color: gold;
+color: black;
+border-radius: 30px;
+padding: 10px 30px;
+font-weight: bolder;
+font-size: large;
+}
+#buttons:hover{
+    background-color: darkblue;
+    color: white;
+}
+        </style>
+         <script>
+            function add(){
+                                    var a,b,c,d,e,f,g,h,i,x,j,k;
+                                    a=parseInt(document.getElementById("length").value);
+                                    b=parseInt(document.getElementById("height").value);
+                                    c=parseInt(document.getElementById("sidesofwall").value);
+                                    d=parseInt(document.getElementById("howmany").value);
+        
+                                    if(a,b,c)     
+                                    {
+                                         e=((a*b)*c);
+                                         f=e/50;
+                                         g=e/100;
+                                         h=e/800;
+                                         i=e/330;
+                                    document.getElementById("brick-labour").value=f;
+                                    document.getElementById("brick-labour").style.fontWeight="bolder";
+                                    document.getElementById("brick-labour").style.color="blue";
+                                    document.getElementById("brick-labour").style.textAlign="center";
+                                    document.getElementById("cement-labour").value=g;
+                                    document.getElementById("cement-labour").style.fontWeight="bolder";
+                                    document.getElementById("cement-labour").style.color="blue";
+                                    document.getElementById("cement-labour").style.textAlign="center";
+                                    document.getElementById("paint-labour").value=h;
+                                    document.getElementById("paint-labour").style.fontWeight="bolder";
+                                    document.getElementById("paint-labour").style.color="blue";
+                                    document.getElementById("paint-labour").style.textAlign="center";
+                                    document.getElementById("titles-labour").value=i;
+                                    document.getElementById("titles-labour").style.fontWeight="bolder";
+                                    document.getElementById("titles-labour").style.color="blue";
+                                    document.getElementById("titles-labour").style.textAlign="center";
+                                    }
+                                     else if(a,b)
+                                     {
+                                       
+                                        e=(a*b);
+                                         f=e/50;
+                                         g=e/100;
+                                         h=e/800;
+                                         i=e/330;
+                                    document.getElementById("brick-labour").value=f;
+                                    document.getElementById("brick-labour").style.fontWeight="bolder";
+                                    document.getElementById("brick-labour").style.color="blue";
+                                    document.getElementById("brick-labour").style.textAlign="center";
+                                    document.getElementById("cement-labour").value=g;
+                                    document.getElementById("cement-labour").style.fontWeight="bolder";
+                                    document.getElementById("cement-labour").style.color="blue";
+                                    document.getElementById("cement-labour").style.textAlign="center";
+                                    document.getElementById("paint-labour").value=h;
+                                    document.getElementById("paint-labour").style.fontWeight="bolder";
+                                    document.getElementById("paint-labour").style.color="blue";
+                                    document.getElementById("paint-labour").style.textAlign="center";
+                                    document.getElementById("titles-labour").value=i;
+                                    document.getElementById("titles-labour").style.fontWeight="bolder";
+                                    document.getElementById("titles-labour").style.color="blue";
+                                    document.getElementById("titles-labour").style.textAlign="center";
+                                    
+                                     }
+                                    if(f,g,h,i)
+                                    {
+                                        j=f+g+h+i;
+                                        document.getElementById("total-labour").value=j=Math.round(j);
+                                    document.getElementById("total-labour").style.fontWeight="bolder";
+                                    document.getElementById("total-labour").style.color="blue";
+                                    document.getElementById("total-labour").style.textAlign="center";
+        
+        
+                                    }
+                                    if(j)
+                                    {   k=d/j;
+                                        document.getElementById("no-labour").value=k;
+                                    document.getElementById("no-labour").style.fontWeight="bolder";
+                                    document.getElementById("no-labour").style.color="blue";
+                                    document.getElementById("no-labour").style.textAlign="center";
+                                    }
+        
+                                }
+              
+        
+        
+           </script>
+    </head>
+    <body>
+        <div id="nowrap">
+        <p>  <img src="civil.jpg" alt="calculator" width="90px" height="90px" > <span id="heads"> 
+            <a id="header">  CIVIL CONSTRUCTION CALCULATOR FOR ESTIMATION </a></span> <img src="logo.png" alt="dept of civil" width="100px" height="100px"  border="2" align="right"></p>
+        
+         <div> <p id="moto"><i>- calculated according to what you think the job</i></p></div>
+        <div><h3 id="memes">measurement of</h3></div>
+  
+           
+                <ul id="main">
+                   <li class="links"><a href="sand.html" id="products">sand</a></li>
+                    <li class="links"  id="concrete1"><a href="#" id="products">concrete</a></li>
+                    <li class="links"><a href="brick page.html" id="products">bricks</a></li>
+                    <li class="links"><a href="cement.html" id="products">cement</a></li>
+                   <li  class="links"><a href="cement for plaster.html" id="products">cement for plaster</a></li>
+                    <li class="links"><a href="tiles.html" id="products">tiles</a></li>
+                    <li class="links"><a href="paints.html" id="products">paints</a></li>
+                    <li class="links active"><a href="labour.html" id="products" class="laboursss"> reuired labour</a></li>
+                    <li class="links"><a href="index.html" id="products">total estimation</a></li>
+                </ul>
+          <br>
+<div id="paint calculator">
+    <fieldset class="fieldset">
+     <legend id="legendtag"><b>LABOUR CALCULATOR</b></legend>
+    <h3>REUIRED FOR LABOUR</h3>
+    <label style="color: red; background-color: white;" >length of the wall(L): <input type="number" name="length of the wall" id="length" required> feet</label><br> <br>
+    <label style="color: red; background-color: white;">width of the wall(H):<input type="number" name="width of the wall" id="height" required> feet</label><br> <br>
+    <label for=""> no of sides : <input type="number" name="number of sides" id="sidesofwall"> nos</label> <br> <br>
+    <label style="color: red; background-color: white;">How many labour will attend:<input type="number" name="no of the labour" id="howmany"> nos</label><br> <br>
+
+    <button onclick="add()" id="buttons">CALCULATE</button>
+     </fieldset>
+</div>
+ <br> <div id="result of walls"> <fieldset class="fieldset" >
+     <legend id="legendtag">RESULT</legend>
+     <h4>REQUIRED AMOUNT OF labour</h4>
+   <label for=""><b>Dry wall</b> (new wall) result:</label> <br><br>
+   <li>No.of.labour required for total work = <input type="text" name="labour" id="total-labour" size="8" max="5" readonly>labour</li> <br> <br>
+   <li  style="color:black; background-color: white;">No.of.labour for brick and cement work= <input type="text" name="labour-brick" id="brick-labour" size="5" max="5" readonly> labour</li> <br> <br>
+   <li style="color:black; background-color: white;">No.of.labour required for plaster work = <input type="text" name="labour-cement" id="cement-labour" size="5" max="5" readonly> labour</li> <br> <br>
+   <li style="color:black; background-color: white;">No.of.labour required for paint work = <input type="text" name="labour-paint" id="paint-labour" size="5" max="5" readonly> labour</li> <br> <br>
+   <li>No.of.labour required for tiles work = <input type="text" name="labour-tiles" id="titles-labour" size="5" max="5" readonly>labour </li> <br> <br>
+   <li>No.of.days required with given labour = <input type="text" name="labour-tiles" id="no-labour" size="8" max="5" readonly>labour </li> <br> <br>
+
+
+
+</fieldset>
+</div>
+</div> 
+</body>
+</html>

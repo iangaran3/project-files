@@ -1,0 +1,580 @@
+<html>
+    <head>
+        <title>TOTAL ESTIMATION</title>
+        <style>
+            body{
+    background-color:white;
+    width: 100%;
+}
+    #main{
+        width:98%;
+        background-color: black;
+        padding: 13px 0;
+        /* padding-left:13px; */
+        position: relative;
+     bottom: 30px;
+     white-space: nowrap;
+     
+     
+       
+    }
+    .active,.links:hover{
+        width:100%;
+    background-color:navy;
+    color: white;
+}
+.links:hover{
+    background-color: chocolate;
+    color: white;
+}
+
+   .links{
+      
+       display: inline;
+       padding: 13px 22px;
+       margin:0 10px;
+   }
+
+  #products {
+      text-decoration: none;
+      color:  white;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    font-size: medium;
+  }
+  .links:hover{
+      background-color: chocolate;
+      color: white;
+  }
+  .nowarp{
+      white-space: nowrap;
+    
+  }
+
+ #moto{
+     font-style: italic;
+     text-align: left;
+      padding-left: 40%;
+     font-weight: bold;
+     font-size:20px;
+     text-transform: capitalize;
+     position: relative;
+     bottom: 20px;
+    
+ }
+ #header{
+    color: brown; 
+     
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-size: 150%;
+ }
+ #memes{
+     text-transform: capitalize;
+     position: relative;
+     bottom: 20px;
+}
+#heads{
+    vertical-align:120%;
+    text-decoration:underline;
+     text-shadow: 0 0 3px green;
+}
+#for{
+    text-align: center;
+}
+#apj{
+    padding-left: 230px;
+}
+
+.fieldset{
+           width:40%;
+           border: 3px solid darkblue;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            font-style: normal;
+          line-height: 20px;
+          float: left;
+          margin-top: 3%;
+          margin-left: 8%;
+        
+        
+}
+
+.fieldset1{
+           width:30%;
+           border: 3px solid darkblue;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            font-style: normal;
+            line-height: 20px;
+          float: left;
+          margin-left: 8% ;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+        
+}
+
+.fieldset11{
+           width:30%;
+           border: 3px solid darkblue;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            font-style: normal;
+            line-height: 20px;
+          float: left;
+          margin-left:35%;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+        
+}
+.timeline{
+    border: 4px solid darkblue;
+    border-radius: 25px;
+    clear: left;
+    width: 40%;
+  position: relative;
+  top: 30px;
+  margin-left: 5% ;
+  padding: 10px;
+    
+} 
+.total{
+    width:40%;
+           border: 3px solid darkblue;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            font-style: normal;
+        text-align: center;
+        
+          margin-left: 30% ;
+          background: url("construction.jpg") no-repeat center;
+}
+#legendtag{
+    background-color: gold;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#locationss{
+    margin-left: 63%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+#thala{
+    text-align:center ;
+}
+#buttons{
+border: none;
+background-color: gold;
+color: black;
+border-radius: 30px;
+padding: 10px 30px;
+font-weight: bolder;
+font-size: large;
+}
+#buttons:hover{
+    background-color: darkblue;
+    color: white;
+}
+#concrete1{
+    visibility:hidden;
+}
+
+        </style>
+         <script>
+                     // cost of all materials
+            function add(){
+                var a,b,c,d,e,g,h,f,i,j,k,p,q,r,s,t,u,v,w,x,y,z,aa,bb,cc,dd,ee,ff,gg,hh,ii,jj,kk,ll,mm,nn,xx,yy;
+                a=parseInt(document.getElementById("area").value);
+                b=parseInt(document.getElementById("cost").value);   
+               
+                     if (a,b)
+                     {
+                        c=a*b;
+                document.getElementById("total").value=c;
+                document.getElementById("total").style.fontWeight="bolder";
+                document.getElementById("total").style.color="blue";
+                document.getElementById("total").style.textAlign="center";
+              
+                     }
+                     if(a){
+                         
+                         document.getElementById("given area").value=a;
+                         document.getElementById("given area").style.fontWeight="bolder";
+                document.getElementById("given area").style.color="blue";
+                document.getElementById("given area").style.textAlign="center";
+                document.getElementById("given-area").value=a;
+                         document.getElementById("given-area").style.fontWeight="bolder";
+                document.getElementById("given-area").style.color="blue";
+                document.getElementById("given-area").style.textAlign="center";
+                     }
+                     if(c)
+                     {
+                         d=(12.3/100)*c;
+                        document.getElementById("sand rs").value=d;
+                         document.getElementById("sand rs").style.fontWeight="bolder";
+                document.getElementById("sand rs").style.color="blue";
+                document.getElementById("sand rs").style.textAlign="center";
+                     }
+                     if(a)
+                     {
+                         p=0.816*a;
+                        document.getElementById("sand qs").value=p;
+                         document.getElementById("sand qs").style.fontWeight="bolder";
+                document.getElementById("sand qs").style.color="blue";
+                document.getElementById("sand qs").style.textAlign="center";
+                     }
+                     if(c)
+                     {
+                         e=(24.6/100)*c;
+                        document.getElementById("steel rs").value=e;
+                         document.getElementById("steel rs").style.fontWeight="bolder";
+                document.getElementById("steel rs").style.color="blue";
+                document.getElementById("steel rs").style.textAlign="center";
+                     }
+                     if(a)
+                     {
+                         q=4*a;
+                        document.getElementById("steel qs").value=q;
+                         document.getElementById("steel qs").style.fontWeight="bolder";
+                document.getElementById("steel qs").style.color="blue";
+                document.getElementById("steel qs").style.textAlign="center";
+                     }
+                     if(c)
+                     {
+                         k=(16.4/100)*c;
+                        document.getElementById("cement rs").value=k;
+                         document.getElementById("cement rs").style.fontWeight="bolder";
+                document.getElementById("cement rs").style.color="blue";
+                document.getElementById("cement rs").style.textAlign="center";
+                     }
+                     if(a)
+                     {
+                         r=0.4*a;
+                        document.getElementById("cement qs").value=r;
+                         document.getElementById("cement qs").style.fontWeight="bolder";
+                document.getElementById("cement qs").style.color="blue";
+                document.getElementById("cement qs").style.textAlign="center";
+                     }
+                     if(c)
+                     {
+                         f=(7.4/100)*c;
+                        document.getElementById("aggregate rs").value=f;
+                         document.getElementById("aggregate rs").style.fontWeight="bolder";
+                document.getElementById("aggregate rs").style.color="blue";
+                document.getElementById("aggregate rs").style.textAlign="center";
+                     }
+                     if(a)
+                     {
+                         s=0.608*a;
+                        document.getElementById("aggregate qs").value=s;
+                         document.getElementById("aggregate qs").style.fontWeight="bolder";
+                document.getElementById("aggregate qs").style.color="blue";
+                document.getElementById("aggregate qs").style.textAlign="center";
+                     }
+                     if(c)
+                     {
+                         g=8*c;
+                        document.getElementById("bricks rs").value=g;
+                         document.getElementById("bricks rs").style.fontWeight="bolder";
+                document.getElementById("bricks rs").style.color="blue";
+                document.getElementById("bricks rs").style.textAlign="center";
+                     }
+                     if(a)
+                     {
+                         t=8*a;
+                        document.getElementById("bricks qs").value=t;
+                         document.getElementById("bricks qs").style.fontWeight="bolder";
+                document.getElementById("bricks qs").style.color="blue";
+                document.getElementById("bricks qs").style.textAlign="center";
+                     }
+                      
+                     if(a)
+                     {
+                      v=1.3*a;
+                        document.getElementById("flooring qs").value=v;
+                         document.getElementById("flooring qs").style.fontWeight="bolder";
+                document.getElementById("flooring qs").style.color="blue";
+                document.getElementById("flooring qs").style.textAlign="center";
+                     }
+                     if(c)
+                     {
+                         i=(4.1/100)*c;
+                        document.getElementById("paint rs").value=i;
+                         document.getElementById("paint rs").style.fontWeight="bolder";
+                document.getElementById("paint rs").style.color="blue";
+                document.getElementById("paint rs").style.textAlign="center";
+                     }
+                     if(a)
+                     {
+                         u=0.18*a;
+                        document.getElementById("paint qs").value=u;
+                         document.getElementById("paint qs").style.fontWeight="bolder";
+                document.getElementById("paint qs").style.color="blue";
+                document.getElementById("paint qs").style.textAlign="center";
+                     }
+                     if(c)
+                     {
+                         h=(8/100)*c;
+                        document.getElementById("tiles rs").value=h;
+                         document.getElementById("tiles rs").style.fontWeight="bolder";
+                document.getElementById("tiles rs").style.color="blue";
+                document.getElementById("tiles rs").style.textAlign="center";
+                     } 
+                     if(c)
+                     {
+                         j=(22.8/100)*c;
+                        document.getElementById("fittings rs").value=j;
+                         document.getElementById("fittings rs").style.fontWeight="bolder";
+                document.getElementById("fittings rs").style.color="blue";
+                document.getElementById("fittings rs").style.textAlign="center";
+                     }             if(a)
+                     {
+                         aa=a/1092;
+                         xx=39*aa;
+                        document.getElementById("xx").value=xx;
+                         document.getElementById("xx").style.fontWeight="bolder";
+                document.getElementById("xx").style.color="blue";
+                document.getElementById("xx").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         yy=28*aa;
+                        document.getElementById("yy").value=yy;
+                         document.getElementById("yy").style.fontWeight="bolder";
+                document.getElementById("yy").style.color="blue";
+                document.getElementById("yy").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         bb=11*aa;
+                        document.getElementById("portico-x").value=bb;
+                         document.getElementById("portico-x").style.fontWeight="bolder";
+                document.getElementById("portico-x").style.color="blue";
+                document.getElementById("portico-x").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         cc=10*aa;
+                        document.getElementById("portico-y").value=cc;
+                         document.getElementById("portico-y").style.fontWeight="bolder";
+                document.getElementById("portico-y").style.color="blue";
+                document.getElementById("portico-y").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         dd=16*aa;
+                        document.getElementById("hall-x").value=dd;
+                         document.getElementById("hall-x").style.fontWeight="bolder";
+                document.getElementById("hall-x").style.color="blue";
+                document.getElementById("hall-x").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         ee=16.10*aa;
+                        document.getElementById("hall-y").value=ee;
+                         document.getElementById("hall-y").style.fontWeight="bolder";
+                document.getElementById("hall-y").style.color="blue";
+                document.getElementById("hall-y").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         ff=10*aa;
+                        document.getElementById("kitchen-x").value=ff;
+                         document.getElementById("kitchen-x").style.fontWeight="bolder";
+                document.getElementById("kitchen-x").style.color="blue";
+                document.getElementById("kitchen-x").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         gg=8.3*aa;
+                        document.getElementById("kitchen-y").value=gg;
+                         document.getElementById("kitchen-y").style.fontWeight="bolder";
+                document.getElementById("kitchen-y").style.color="blue";
+                document.getElementById("kitchen-y").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         hh=10*aa;
+                        document.getElementById("dining-x").value=hh;
+                         document.getElementById("dining-x").style.fontWeight="bolder";
+                document.getElementById("dining-x").style.color="blue";
+                document.getElementById("dining-x").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         ii=8.3*aa;
+                        document.getElementById("dining-y").value=ii;
+                         document.getElementById("dining-y").style.fontWeight="bolder";
+                document.getElementById("dining-y").style.color="blue";
+                document.getElementById("dining-y").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         jj=10*aa;
+                        document.getElementById("bedroom-y").value=jj;
+                         document.getElementById("bedroom-y").style.fontWeight="bolder";
+                document.getElementById("bedroom-y").style.color="blue";
+                document.getElementById("bedroom-y").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         jj=10*aa;
+                        document.getElementById("bedroom-x").value=jj;
+                         document.getElementById("bedroom-x").style.fontWeight="bolder";
+                document.getElementById("bedroom-x").style.color="blue";
+                document.getElementById("bedroom-x").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         kk=4*aa;
+                        document.getElementById("pooja-y").value=kk;
+                         document.getElementById("pooja-y").style.fontWeight="bolder";
+                document.getElementById("pooja-y").style.color="blue";
+                document.getElementById("pooja-y").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         ll=5.6*aa;
+                        document.getElementById("pooja-x").value=ll;
+                         document.getElementById("pooja-x").style.fontWeight="bolder";
+                document.getElementById("pooja-x").style.color="blue";
+                document.getElementById("pooja-x").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         mm=5.6*aa;
+                        document.getElementById("toilet-x").value=mm;
+                         document.getElementById("toilet-x").style.fontWeight="bolder";
+                document.getElementById("toilet-x").style.color="blue";
+                document.getElementById("toilet-x").style.textAlign="center";
+                }
+                {
+                         aa=a/1092;
+                         nn=6*aa;
+                        document.getElementById("toilet-y").value=nn;
+                         document.getElementById("toilet-y").style.fontWeight="bolder";
+                document.getElementById("toilet-y").style.color="blue";
+                document.getElementById("toilet-y").style.textAlign="center";
+                }
+                   
+                   
+                   
+                     
+            } 
+
+            function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+
+    }
+    
+            
+
+              
+
+       </script>
+    </head>
+    <body>
+        <p> <div class="mainfun"> <img src="civil.jpg" alt="calculator" width="90px" height="90px" > <span id="heads"> 
+            <a  id="header">  CIVIL CONSTRUCTION CALCULATOR FOR ESTIMATION </a></span> <img src="logo.png" alt="dept of civil" width="80px" height="80px"  border="2" align="right" ></p>
+        
+         <div> <p id="moto"><i >- calculated according to what you think the job</i> </p></div>
+        <div><h3 id="memes">measurement of  </h3></div>
+    
+           
+                <ul id="main">
+                   <li class="links"><a href="sand.html" id="products">sand</a></li>
+                    <!-- <li class="links"  id="concrete1" ><a href="#" id="products">concrete</a></li> -->
+                   <li class="links"><a href="brick page.html" id="products">bricks</a></li>
+                    <li class="links"><a href="cement.html" id="products">cement</a></li>
+                   <li  class="links"><a href="cement for plaster.html" id="products">cement for plaster</a></li>
+                    <li class="links"><a href="tiles.html" id="products">tiles</a></li>
+                    <li class="links"><a href="paints.html" id="products">paints</a></li>
+                    <li class="links"><a href="labour.html" id="products"> reuired labour</a></li>
+                    <li class="links active"><a href="index.html" id="products">total estimation</a></li>
+                </ul>
+    </div>
+           <div class="total">
+               
+               <h2>CONSTRUCTION ESTIMATOR</h2>
+               <label> <p style="font-family: Arial, Helvetica, sans-serif;">Builtup area (lxb): <input type="number" name="area" size="7" id="area"> sq.feet </p></label>
+               <br>
+               <label><p style="font-family: Arial, Helvetica, sans-serif; background-color: lightgray;"> approxi <b style="font-size: 150%;">cost</b> for per (sq.feet):
+                <input type="text" name="area" size="5" id="cost"> Rs</label> </p> <br> <br>
+               <button onclick="add()" id="buttons">CALCULATE</button>
+               
+              </div>
+              <div class="nowrap">
+              <div>
+                  <fieldset class="fieldset">
+                    <label> <p style="font-family: Arial, Helvetica, sans-serif; background-color: lightgray;">approxmate cost for given construction area:
+                      <input type="text" name="area" size="10" id="total" readonly> rupees </p></label>
+                      <legend id="legendtag"> COST FOR MATERIALS</legend>
+                      <h3>approxmate cost for materials per thumb rule</h3>
+                 <label> SAND (12.3%) : <input type="number" id="sand rs" readonly> Rs </label> <br> <br>
+                 <label> STEEL (24.6%) : <input type="number" id="steel rs" readonly> Rs </label> <br> <br>
+                 <label> CEMENT (16.4%) : <input type="number" id="cement rs" readonly> Rs </label> <br> <br>
+                 <label> AGGREGATE (7.4%) : <input type="number" id="aggregate rs" readonly> Rs </label> <br> <br>
+                 <label> BRICKS (4.4%) : <input type="number" id="bricks rs" readonly> Rs </label> <br> <br>
+                 <label> TILES (8.0) : <input type="number" id="tiles rs" readonly> Rs </label> <br> <br>
+                 <label> PAINT (4.1%) : <input type="number" id="paint rs" readonly> Rs </label> <br> <br>
+                 <label> FITTINGS (22.8%) : <input type="number" id="fittings rs" readonly> Rs <br> <div style="text-transform: lowercase;"> [WINDOW (3.0%)+DOORS(3.4%)+PLUMBING(5.5%)+ <br> ELECTRICAL(6.8%)+SANITARY(4.1%)]</div></label>
+                  </fieldset>
+              </div> <br><br>
+              <div>
+               <fieldset class="fieldset1">
+                      <legend id="legendtag">QUANTITY FOR MATERIALS</legend>
+                      <h3>Quantity of materials reuired for <input type="number" name="given area" id="given area" size="6" readonly> ft<sup>2</sup></h3>
+                      <label> SAND :   <input type="number" id="sand qs" readonly> Ton </label> <br> <br>
+                      <label> STEEL : <input type="number" id="steel qs" readonly> Kg </label> <br> <br>
+                      <label> CEMENT : <input type="number" id="cement qs" readonly> Bags </label> <br> <br>
+                      <label> AGGREGATE :  <input type="number" id="aggregate qs"readonly> Ton </label> <br> <br>
+                      <label> BRICKS : <input type="number" id="bricks qs" readonly> Pices </label> <br> <br>
+                      <label> BRICKS FOR FLOORING : <input type="text" id="flooring qs" size="4" readonly> Pices  </label> <br> <br>
+                      <label> PAINT : <input type="number" id="paint qs" readonly> litters </label> <br> <br>
+                  </fieldset>
+              </div>
+            </div>
+             <!-- <div class="Timeline">
+                
+                      <H3>Timeline to <b>To complete this construction</b> in <input type="number" name="complete" id="complete">and money reuired as below</H3>
+
+                </div>-->
+                <div>
+                    <p><img src="0001.jpg" alt="design image" title="sample design" width="100%"></p>
+                </div>
+                <div>
+                    <div>
+                        <fieldset class="fieldset11">
+                               <legend id="legendtag">MEASUREMENTS for room dimension </legend>
+                               <h3>design for given <input type="text" name="given area" id="given-area" size="6" readonly> ft<sup>2</sup> area</h3>
+                               <div id="thala"><label> TOTAL : X=<input type="text" id="xx"  size="5" readonly>(x)Y=<input type="text" id="yy" size="5" readonly>ft<sup>2</sup> area   </label> <br> <br>
+                                <label> POOJA : X=<input type="text" id="pooja-x" size="5" readonly>(x)Y=<input type="text" id="pooja-y" size="5" readonly>ft<sup>2</sup> area  </label> <br> <br>
+                                <label> BEDROOM : X=<input type="text" id="bedroom-x" size="4" readonly>(x)Y=<input type="text" id="bedroom-y" size="4" readonly>ft<sup>2</sup> area  </label> <br> <br>
+                                <label> DINING : X=<input type="text" id="dining-x" size="5" readonly>(x)Y=<input type="text" id="dining-y" size="5" readonly> ft<sup>2</sup> area</label> <br> <br>
+                                <label> HALL : X =<input type="text" id="hall-x" size="5" readonly>(x)Y=<input type="text" id="hall-y" size="5" readonly>ft<sup>2</sup> area </label> <br> <br>
+                                <label> TOILET : X=<input type="text" id="toilet-x" size="5" readonly>(x)Y=<input type="text" id="toilet-y" size="5" readonly>ft<sup>2</sup> area </label> <br> <br>
+                                <label>  KITCHEN : X=<input type="text" id="kitchen-x" size="5" size="5" readonly>(x)Y=<input type="text" id="kitchen-y" size="5" readonly>ft<sup>2</sup> area  </label> <br> <br>
+                                <label> PORTICO : X=<input type="text" id="portico-x" size="5" readonly>(x)Y=<input type="text" id="portico-y" size="5" readonly>ft<sup>2</sup> area </label> <br> <br>
+                                </div>
+                               <p>W-window , MD-main-door , D-door</p>
+                           </fieldset>
+                       </div>
+                </div>
+    </body>
+
+    
+</html>

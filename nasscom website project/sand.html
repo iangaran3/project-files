@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>
+                SAND ESTIMATOR
+        </title>
+        <link rel="stylesheet" href="common style.css">
+        <style>
+            .fieldset{
+               width:40%;
+               border: 3px solid black;
+                border-radius: 20px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: normal;
+              line-height: 20px;
+              float: left;
+              margin : 0 3.5% ;
+        
+            }
+            .fieldset1{
+               width:40%;
+               border: 3px solid black;
+                border-radius: 20px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: normal;
+              line-height: 20px;
+              float: left;
+              margin : 0 3.5% ;
+              background: url("sand1.jpg") no-repeat center;
+            }
+            #default{
+            text-align: center;
+            text-transform: capitalize; 
+            font-weight: bolder;
+        margin-top: 10px;
+            text-decoration:  underline;
+            font-size: 17px;
+        }
+        #default1{
+            text-align: right;
+            text-transform: capitalize; 
+            font-weight: bolder;
+        margin-top: 10px;
+            text-decoration:  underline;
+            font-size: 17px;
+            margin-right: 140px;
+        }
+        .thickness1{
+              font-weight: bolder;
+              padding: 5spx;
+              text-align: center;
+              font-size: large;
+            }
+            #buttons{
+border: none;
+background-color: gold;
+color: black;
+border-radius: 30px;
+padding: 10px 30px;
+font-weight: bolder;
+font-size: large;
+}
+#buttons:hover{
+    background-color: darkblue;
+    color: white;
+}
+      
+        </style>
+         <script>
+            function add(){
+                                    var a,b,c,d,e,f,g,h,i,x,y,z,j;
+                                    a=parseInt(document.getElementById("length").value);
+                                    b=parseInt(document.getElementById("height").value);
+                                    c=parseFloat(document.getElementById("thickness").value);
+                                    d=parseInt(document.getElementById("windows").value);
+                                   // i=parseInt(document.getElementById("cement-price").value);
+        
+                                    if(a,b,c,d)     
+                                    {
+                                         e=(a*b)-d;
+                                         f=c/12;
+                                         g=e*f;
+                                         h=g/0.0740131822411;
+                                         x=h/250;
+                                         z=x*115;
+                                         y=z/45;
+                                    document.getElementById("result").value=y;
+                                    document.getElementById("result").style.fontWeight="bolder";
+                                    document.getElementById("result").style.color="blue";
+                                    document.getElementById("result").style.textAlign="center";
+                                    }
+                                     else if(a,b,c)
+                                     {
+                                        e=(a*b);
+                                         f=c/12;
+                                         g=e*f;
+                                         h=g/0.0740131822411;
+                                         x=h/250;
+                                         z=x*115;
+                                         y=z/45;
+
+                                    document.getElementById("result").value=y;
+                                    document.getElementById("result").style.fontWeight="bolder";
+                                    document.getElementById("result").style.color="blue";
+                                    document.getElementById("result").style.textAlign="center";
+                                     }
+                                   if(a,b,d)
+                                    {
+                                        e=(a*b)-d;
+                                        j=(4.37*e)/100;
+                                        document.getElementById("result1").value=j;
+                                    document.getElementById("result1").style.fontWeight="bolder";
+                                    document.getElementById("result1").style.color="blue";
+                                    document.getElementById("result1").style.textAlign="center";
+        
+        
+                                    }
+                                   else if(a,b)
+                                    {  e=(a*b);
+                                        j=(4.37*e)/100;
+                                        document.getElementById("result1").value=j;
+                                    document.getElementById("result1").style.fontWeight="bolder";
+                                    document.getElementById("result1").style.color="blue";
+                                    document.getElementById("result1").style.textAlign="center";
+                                    }
+        
+                                }
+              
+        
+        
+           </script>
+    </head>
+    <body>
+        <p>  <img src="civil.jpg" alt="calculator" width="90px" height="90px" > <span id="heads"> 
+            <a  id="header">  CIVIL CONSTRUCTION CALCULATOR FOR ESTIMATION </a></span> <img src="logo.png" alt="dept of civil" width="100px" height="100px"  border="2" align="right"></p>
+        
+         <div> <p id="moto"><i>- calculated according to what you think the job</i></p></div>
+        <div><h3 id="memes">measurement of</h3></div>
+
+                <ul id="main">
+                   <li class="links active"><a href="sand.html" id="products">sand</a></li>
+                    <li class="links"  id="concrete1"><a href="#" id="products">concrete</a></li>
+                    <li class="links"><a href="brick page.html" id="products">bricks</a></li>
+                    <li class="links"><a href="cement.html" id="products">cement</a></li>
+                   <li  class="links"><a href="cement for plaster.html" id="products">cement for plaster</a></li>
+                    <li class="links"><a href="tiles.html" id="products">tiles</a></li>
+                    <li class="links"><a href="paints.html" id="products">paints</a></li>
+                    <li class="links"><a href="labour.html" id="products"> reuired labour</a></li>
+                    <li class="links"><a href="index.html" id="products">total estimation</a></li>
+                </ul>
+           </div>
+<br>
+<div id="sand calculator">
+    <fieldset class="fieldset1">
+ <legend id="legendtag"><b>SAND CALCULATOR</b></legend>
+    <h3>Dimension of wall:-</h3>
+    <label>length of the wall(L): <input type="number" name="length of the wall" id="length" required> feet</label><br>  <br>
+    <label>height of the wall(H):<input type="number" name="height of the wall" id="height" required> feet</label><br> <br>
+    <label> wall thickness: <select name="thickness of the wall"  id="thickness" class="thickness1" required> 
+        <option value="4.5">  4.5  </option>
+         <option value="9">  9 </option>
+                        </select> <b> inches</b> <sub>(9inch or 4.5inch)</sub></label><br> <br>
+    <label>window (or) Door area :<input type="number" name="window" id="windows" > Sq.feet</label><br>  <br>
+    
+  <button onclick="add()" id="buttons">CALCULATE</button>
+</fieldset>   
+</div>
+<div>
+    <fieldset class="fieldset">
+ <legend id="legendtag"><b>QUANTITY FOR BRICK WORK</b></legend>
+    <h3>Dimension of wall:-</h3>
+    <label> Requirement Sand for brick work <input type="number" name="length of the wall" id="result" readonly> CFT</label><br>  <br>
+</fieldset>   
+</div>
+<div id="default">
+    <p><strong>1 cement bag = 50 kg</strong></p>
+    <p><em>quantity (nos) =1 , mortar ratio = <b>1</b><sub>(cement)</sub> : <b>5</b><sub>(sand)</sub></em></p>
+</div>
+<fieldset class="fieldset">
+    <legend id="legendtag"><b>QUANTITY FOR BRICK WORK</b></legend>
+       <h3>Dimension of wall:-</h3>
+       <label> Requirement Sand for plaster Work <input type="text" name="length of the wall" size="6" id="result1" readonly> CFT</label><br>  <br>
+   </fieldset>
+   <div id="default1">
+    <p><strong>1 cement bag = 50 kg</strong></p>
+    <p><em>quantity (nos) =1 , mortar ratio = <b>1</b><sub>(cement)</sub> : <b>4</b><sub>(sand)</sub></em></p>
+</div>  
+    </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        form {
+            text-align: center;
+            width: 400px;
+            text-transform: capitalize;
+            font-size: x-large;
+            max-height: 100%;
+            background-color: blue;
+            border-radius: 5px;
+            padding: 10px 30px;
+
+        }
+
+        .comman {
+            padding-bottom: 15px;
+            position: relative;
+        }
+
+        #error {
+            position: absolute;
+            visibility: visible;
+            color: red;
+            font-size: medium;
+        }
+
+        #error1 {
+            position: absolute;
+            visibility: visible;
+            color: red;
+            font-size: medium;
+        }
+
+        #error2 {
+            position: absolute;
+            visibility: visible;
+            color: red;
+            font-size: medium;
+        }
+
+        input {
+            border-radius: 1px;
+        }
+
+        #submit {
+            position: relative;
+            top: 20px;
+            padding: 9px;
+            font-size: large;
+            font-weight: bold;
+            color: blue;
+        }
+
+        button {
+            border-radius: 30%;
+
+        }
+
+        #submit:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <script type="text/javascript">
+    function test(theform)
+    {
+        if (theform.thefield.value == "foo") return true;
+        else return false;
+    }
+    </script>
+    
+        <form action="" onsubmit="return test(this);">
+        <input type="text" value="" name="thefield" />
+        <input type="submit" />
+        </form>
+        <form action="" onsubmit="return test(this);">
+        <input type="text" value="" name="thefield" />
+        <input type="submit" />
+        </form>
+        <form action="" onsubmit="return test(this);">
+        <input type="text" value="" name="thefield" />
+        <input type="submit" />
+        </form> -->
+
+
+
+    <form method="get" class="forms" name='f1' onsubmit=" return validate('f1')">
+        <div class="main">
+            <h3>log in form</h3>
+
+            <div class="comman">
+                <label for="">username</label>
+                <input type="text" placeholder="username" id="user" name="username"> <br>
+                <span id="error"></span>
+                
+            </div>
+            <div class="comman">
+                <label for="">password</label>
+                <input type="pwd" name="password" placeholder="enter a password" id="password"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">email</label>
+                <input type="email" name="email" placeholder="enter a email" id="same" class="simi"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">password</label>
+                <input type="pwd" name="password" placeholder="enter a password" id="same1" class="simi"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">username</label>
+                <input type="text" placeholder="username" id="user" name="username"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="submit">
+                <button id="submit" type="submit" class="submits">submit</button>
+            </div>
+    </form>
+    </div>
+    <br>
+    <form method="get" class="forms" name='f2' onsubmit=" return validate('f2')">
+        <div class="main">
+            <h3>log in form</h3>
+
+            <div class="comman">
+                <label for="">username</label>
+                <input type="text" placeholder="username" id="user" name="username"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">password</label>
+                <input type="pwd" name="password" placeholder="enter a password" id="password"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">email</label>
+                <input type="email" name="email" placeholder="enter a email" id="same" class="simi"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">password</label>
+                <input type="pwd" name="password" placeholder="enter a password" id="same1" class="simi"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="submit">
+                <button id="submit" type="submit" class="submits">submit</button>
+            </div>
+    </form>
+
+    </div>
+    <br>
+    <form method="get" class="forms" name='f3' onsubmit="return validate('f3')"
+        style="float: right; position:relative;bottom:500px;">
+        <div class="main">
+            <h3>log in form</h3>
+
+            <div class="comman">
+                <label for="">username</label>
+                <input type="text" placeholder="username" id="user" name="username1"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">password</label>
+                <input type="pwd" name="password1" placeholder="enter a password" id="password"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">email</label>
+                <input type="email" name="email1" placeholder="enter a email" id="same" class="simi"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">password</label>
+                <input type="pwd" name="password1" placeholder="enter a password" id="same1" class="simi"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="comman">
+                <label for="">password</label>
+                <input type="pwd" name="password1" placeholder="enter a password" id="same1" class="simi"> <br>
+                <span id="error"></span>
+            </div>
+            <div class="submit">
+                <button id="submit" type="submit" class="submits">submit</button>
+            </div>
+    </form>
+
+    </div>
+    <script>
+        //      var buts=document.querySelector('form');
+        // for (let i = 0; i < buts.length; i++) {
+        //         document.querySelectorAll('form')[i].addEventListener("click" , event => {
+        //     event.preventDefault()
+        //     this.validate()
+        // })   
+        //     }
+        //  function validate(){
+
+        //    var inputs=this.document.getElementsByTagName("input");
+        // for (let i =0; i<inputs.length; i++) {
+        //    if(inputs[i].value==""||inputs[i].value=="null"){
+        //    document.getElementsByTagName("span")[i].innerText="enter a values";
+        //  }
+        //    else{
+        //       document.getElementsByTagName("span")[i].innerHTML="";
+        //    }   
+        // }
+        // }
+        // var buts = document.querySelector('form');
+        //     for (let i = 0; i < buts.length; i++) {
+        //         document.querySelectorAll('form')[i].addEventListener("click", event => {
+        //             event.preventDefault()
+        //             this.validate()
+        //         })
+        //     }
+
+
+
+        function validate(fName) {
+            var inputs=document.forms[fName].getElementsByTagName("input");
+            // var no=document.getElementsByTagName("input");
+            // var inputs=document.forms[fName];
+            for (let i = 0; i <inputs.length;i++) {
+
+                if (inputs[i].value == "" ||inputs[i].value== "null") {
+                    document.forms[fName].getElementsByTagName("span")[i].innerText = "enter a values";
+                    return false;
+                }
+                else {
+                    document.forms[fName].getElementsByTagName("span")[i].innerHTML = "";
+                }
+            }
+        }
+
+
+
+    
+
+
+
+
+
+    </script>
+</body>
+
+</html>
